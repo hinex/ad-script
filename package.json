@@ -1,0 +1,35 @@
+{
+  "name": "ad-rotator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "dev": "API_PORT=5000 node $NODE_DEBUG_OPTION src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinex/ad-rotator.git"
+  },
+  "author": "Roman Hinex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hinex/ad-rotator/issues"
+  },
+  "homepage": "https://github.com/hinex/ad-rotator#readme",
+  "dependencies": {
+    "config": "^3.0.1",
+    "hapi": "^18.1.0",
+    "hapi-swagger": "^9.3.1",
+    "inert": "^5.1.2",
+    "joi": "^14.3.1",
+    "uuid": "^3.3.2",
+    "vision": "^5.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-hapi": "^12.0.0",
+    "eslint-plugin-hapi": "^4.1.0"
+  }
+}

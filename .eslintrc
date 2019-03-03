@@ -1,0 +1,14 @@
+{
+  "extends": "eslint-config-hapi",
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules" : {
+    "strict": [2, "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "eol-last": ["error", "always"],
+    "indent": ["error", 4, { "MemberExpression": 1 }],
+    "semi": ["error", "never"]
+  }
+}
