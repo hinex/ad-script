@@ -5,7 +5,7 @@ const Joi = require('joi')
 const lastModified = new Date().toUTCString()
 const etag = UUID()
 
-const codeAction = async (request, h) => {
+const iframeAction = async (request, h) => {
 
     try {
 
@@ -20,7 +20,7 @@ const codeAction = async (request, h) => {
     }
 
     catch (e) {
-        console.error('banner:code:codeAction', e)
+        console.error('banner:ad:iframeAction', e)
         return `errorForBanner`
     }
 }
@@ -28,9 +28,9 @@ const codeAction = async (request, h) => {
 module.exports = [
     {
         method: 'get',
-        path: '/code.js',
+        path: '/iframe.html',
         config: {
-            handler: codeAction,
+            handler: iframeAction,
             validate: {
                 query: {
                     id: Joi.number().required(),
@@ -39,7 +39,7 @@ module.exports = [
                 },
             },
             description: 'Banner code for client application',
-            tags: ['banner', 'code'],
+            tags: ['banner', 'script'],
         },
     },
 ]

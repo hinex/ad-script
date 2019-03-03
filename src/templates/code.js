@@ -1,6 +1,6 @@
 module.exports = (url, id, x, y) => (`(function() {
 	var t = document.currentScript;
-    var r = "${url}/banner?id=${id}&x=${x}&y=${y}";
+    var r = "${url}/iframe.html?id=${id}&x=${x}&y=${y}";
     var e=document.createElement("iframe");
     e.setAttribute("src",r);
     e.setAttribute("style","${x ? `width:${x}px;` : ''}${y ? `width:${y}px;` : ''}border:none;");

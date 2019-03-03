@@ -1,0 +1,9 @@
+{
+  "projects": [
+    {"id": 1, "link": "http://google.com"},
+    {"id": 2, "link": "http://yandex.com"},
+    {"id": 3, "link": "http://yahoo.com"},
+    {"id": 3, "link": "http://telegram.org"}
+  ],
+  "clicks": []
+}
