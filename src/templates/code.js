@@ -1,6 +1,6 @@
 module.exports = (url, id, x, y) => (`(function() {
 	var t = document.currentScript;
-    var r = "${url}/iframe.html?id=${id}";
+    var r = "${url}/iframe.html?id=${id}&x=${x}&y=${y}";
     var e=document.createElement("iframe");
     
     var plugins=[];

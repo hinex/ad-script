@@ -1,9 +1,32 @@
 {
   "projects": [
-    {"id": 1, "link": "http://google.com"},
-    {"id": 2, "link": "http://yandex.com"},
-    {"id": 3, "link": "http://yahoo.com"},
-    {"id": 3, "link": "http://telegram.org"}
+    {
+      "id": 1,
+      "link": "http://google.com"
+    },
+    {
+      "id": 2,
+      "link": "http://yandex.com"
+    },
+    {
+      "id": 3,
+      "link": "http://yahoo.com"
+    },
+    {
+      "id": 4,
+      "link": "http://telegram.org"
+    }
   ],
-  "clicks": []
+  "clicks": [
+    {
+      "id": 4,
+      "click_id": "5a28c91f-4326-42da-aeed-075c3c5809ef",
+      "tz": "Asia/Bishkek",
+      "tz_offset": "-360",
+      "cookies": "true",
+      "location": "http://localhost:63342/ad-rotator/example/index.html?_ijt=71vkhjgmeki5jb9hron89kj732",
+      "plugins": "Chrome PDF Plugin,Chrome PDF Viewer,Native Client",
+      "hash": "03624c3add3b0dcf85685646a7a886b1a568a21d87181e13da20044b163e52d8"
+    }
+  ]
 }
