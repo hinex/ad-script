@@ -21,7 +21,7 @@ module.exports = (url, id, project, x, y) => (`<!DOCTYPE html>
         var d = new Date();
 
         var data = [
-            'id=${id}',
+            'project_id=${id}',
             'click_id=${UUID()}',  
             'tz=' + Intl.DateTimeFormat().resolvedOptions().timeZone,
             'tz_offset=' + d.getTimezoneOffset(),
