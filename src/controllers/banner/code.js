@@ -55,8 +55,9 @@ module.exports = [
                     y: Joi.number().required(),
                 },
             },
+            notes: 'Banner code',
             description: 'Banner code for client application',
-            tags: ['banner', 'code'],
+            tags: ['api', 'banner'],
         },
     },
     {
@@ -73,8 +74,9 @@ module.exports = [
                     click_id: Joi.string().required(),
                 },
             },
-            description: 'Banner click',
-            tags: ['banner', 'click'],
+            notes: 'Banner click',
+            description: 'Banner click handler',
+            tags: ['api', 'banner'],
         },
     },
 ]

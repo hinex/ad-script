@@ -10,6 +10,8 @@ module.exports = async (server) => {
             title: Package.name,
             version: Package.version,
         },
+        grouping: 'tags',
+        expanded: 'none',
     }
 
     await server.register([

@@ -55,8 +55,9 @@ module.exports = [
                         .header('Content-Type', 'text/html')
                 },
             },
-            description: 'Banner code for client application',
-            tags: ['banner', 'script'],
+            notes: 'Iframe template',
+            description: 'Iframe template client application',
+            tags: ['api', 'iframe'],
         },
     },
 ]

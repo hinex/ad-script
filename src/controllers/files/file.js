@@ -26,8 +26,9 @@ module.exports = [
                     file: Joi.string().required()
                 },
             },
-            description: 'Banner code for client application',
-            tags: ['banner', 'script'],
+            notes: 'Static files',
+            description: 'Files from static folder',
+            tags: ['api', 'file'],
         },
     },
 ]
