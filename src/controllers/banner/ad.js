@@ -1,4 +1,5 @@
 const BannerTemplate = require('../../templates/banner')
+const ErrorTemplate = require('../../templates/error')
 const UUID = require('uuid/v4')
 const Joi = require('joi')
 const DB = require('../../db')
@@ -30,7 +31,8 @@ const iframeAction = async (request, h) => {
 
     catch (e) {
         console.error('banner:ad:iframeAction', e)
-        return `errorForBanner`
+        return h.response(ErrorTemplate())
+            .header('Content-Type', 'text/html')
     }
 }
 
@@ -45,6 +47,12 @@ module.exports = [
                     id: Joi.number().required(),
                     x: Joi.number().required(),
                     y: Joi.number().required(),
+                },
+                failAction: function (request, reply, source, error) {
+
+                    error.output.payload.message = 'custom';
+                    return h.response(ErrorTemplate())
+                        .header('Content-Type', 'text/html')
                 },
             },
             description: 'Banner code for client application',

@@ -1,7 +1,7 @@
 module.exports = {
     General: {
-        port: process.env.PORT || 5000,
-        domain: process.env.domain || 'http://localhost',
+        port: process.env.API_PORT || 5000,
+        domain: process.env.API_DOMAIN || 'http://localhost',
         cors: true,
     }
 }
