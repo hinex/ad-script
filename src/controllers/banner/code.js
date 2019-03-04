@@ -70,7 +70,7 @@ module.exports = [
                     allowUnknown: true
                 },
                 query: {
-                    id: Joi.number().required(),
+                    project_id: Joi.number().required(),
                     click_id: Joi.string().required(),
                 },
             },
